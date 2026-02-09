@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #333;
+}
+
+/* COMMON CARD */
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  width: 320px;
+  margin: 120px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+input, button {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  background: #ff69b4;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover {
+  background: #ff4fa3;
+}
+
+/* LOGIN */
+.login-bg {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  height: 100vh;
+}
+
+/* HOME */
+.home-bg {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  height: 100vh;
+}
+
+.menu a {
+  display: block;
+  margin: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 💧 WATER DROPS BACKGROUND */
+.water-bg {
+  height: 100vh;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.5) 8%, transparent 9%),
+    radial-gradient(circle at 70% 60%, rgba(255,255,255,0.4) 10%, transparent 11%),
+    radial-gradient(circle at 40% 80%, rgba(255,255,255,0.3) 6%, transparent 7%),
+    linear-gradient(to bottom, #00c6ff, #0072ff);
+  background-size: cover;
+}
+
+/* 🏋️ EXERCISE / FITNESS BACKGROUND */
+.exercise-bg {
+  height: 100vh;
+  background:
+    linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+    linear-gradient(to right, #f7971e, #ffd200);
+  color: #000;
+}
+
+/* 💡 MOTIVATIONAL PROFESSIONAL LOOK */
+.quote-bg {
+  height: 100vh;
+  background:
+    linear-gradient(135deg, rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+    linear-gradient(to right, #8360c3, #2ebf91);
+  color: white;
+}
+
+.quote-bg .card {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 20px;
+}

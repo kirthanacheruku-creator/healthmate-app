@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Motivation</title>
+  <style>
+    body {
+      background: #ffe6f2;
+      font-family: Arial;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      width: 300px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      width: 90%;
+    }
+    button {
+      background: #ff69b4;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>⭐ Motivation</h2>
+  <input type="time" id="time">
+  <button onclick="setReminder()">Set Reminder</button>
+  <button onclick="goBack()">Back</button>
+</div>
+
+<script>
+const quotes=[
+ "Believe in yourself 💖",
+ "Small steps everyday 💪",
+ "You are stronger than you think 🌟",
+ "Success starts with self discipline 🚀",
+ "Never give up 🔥"
+];
+
+function setReminder(){
+  let t=document.getElementById("time").value;
+  if(t===""){ alert("Select time"); return; }
+
+  let now=new Date();
+  let [h,m]=t.split(":");
+  let target=new Date();
+  target.setHours(h,m,0,0);
+
+ 
+  if(target<now) target.setDate(target.getDate()+1);
+
+  let diff=target-now;
+  let q=quotes[Math.floor(Math.random()*quotes.length)];
+
+  alert("Motivation reminder set!");
+
+  setTimeout(()=>{
+    alert("⭐ "+q);
+  },diff);
+}
+
+function goBack(){
+  window.location.href="home.html";
+}
+</script>
+
+</body>
+</html>

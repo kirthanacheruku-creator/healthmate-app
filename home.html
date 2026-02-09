@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <style>
+    body {
+      background: #e6f7ff;
+      font-family: Arial;
+      text-align: center;
+      padding-top: 100px;
+    }
+    button {
+      padding: 15px 30px;
+      margin: 15px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: none;
+      background: #ff69b4;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Welcome to Health Reminder App 💖</h1>
+
+<button onclick="go('water.html')">💧 Water Reminder</button>
+<button onclick="go('exercise.html')">🏃 Exercise Reminder</button>
+<button onclick="go('motivational.html')">⭐ Motivational Reminder</button>
+<button onclick="go('about.html')">ℹ️ About</button>
+
+<script>
+function go(page){
+  window.location.href = page;P
+}
+</script>
+
+</body>
+</html>
